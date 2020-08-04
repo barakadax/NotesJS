@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--   (\____/) 
+       (•(ㅅ)•)      
+   　＿ノ ヽ ノ＼＿    
+  `/　`/ ⌒Ｙ⌒ Ｙ　ヽ  
+  ( 　(三ヽ人　 /　　 | 
+   |　ﾉ⌒＼ ￣￣ヽ　 ノ
+   ヽ＿＿＿＞､＿＿_／
+　　   ｜( 王 ﾉ〈 
+　　   / ﾐ`ー―彡 \
+　　  /  ╰    ╯  /
+code by Barakadax-->
+<html lang="en">
+<head>
+    <link href="styling/to_do.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans&display=swap" rel="stylesheet">
+    <meta charset=utf-8 />
+    <title>Notes</title>
+</head>
+
+<body>
+    <h1 id="show_explain"><u>Notes</u></h1>
+
+    <form onsubmit="return false">
+        <input type="button" value="add" id="add" onclick="adding_note()">
+        <input type="button" value="delete all" id="all" onclick="delete_all_func()">
+        <input type="text" spellcheck="false" placeholder="search" id="search">
+        <input type="button" value="power outage" id="megic" onclick="megicly()">
+    </form>
+
+    <p id="empty"></p>
+    <table id="table">
+    </table>
+
+    <div id="enter_list">
+        <input type="image" src="stuff/close.png" alt="close" id="img" onclick="exit_adding_note()">
+        <div id="better">
+            <textarea spellcheck="false" id="textarea"></textarea>
+            <form>
+                <select id=colours>
+                    <option value="0">Orange</option>
+                    <option value="1">Purple</option>
+                    <option value="2">Green</option>
+                    <option value="3">Cyan</option>
+                    <option value="4">Red</option>
+                    <option value="5">White</option>
+                </select>
+                <input type="button" value="submit" id="submit" onclick="adding_note()">
+            </form>
+        </div>
+    </div>
+    <footer id="footer">©Barakadax</footer>
+    <script src="js/to_do.js"></script>
+</body>
+</html>
